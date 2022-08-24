@@ -7,18 +7,15 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "import random\n" +
-    "drivers = [&quot;Bowser&quot;,&quot;Mario&quot;,&quot;Yoshi&quot;,&quot;Peach&quot;]\n" +
-    "rndNum = random.randrange(0, 10)\n" +
-    "if rndNum &lt; len(drivers):\n" +
-    "	print(&quot;You&#039;ve lost &quot; + drivers[rndNum] + &quot; because they drove off the Rainbow Road.&quot;)\n" +
-    "	del drivers[rndNum]\n" +
-    "else:\n" +
-    "	print(&quot;You&#039;ve unlocked Luigi!&quot;)\n" +
-    "	drivers.append(&quot;Luigi&quot;)\n" +
-    "print(&quot;You now have the following drivers:&quot;)\n" +
-    "for driver in drivers:\n" +
-    "	print(driver)";
+  var initial = "# Your Name\n" +
+    "# The Date\n" +
+    "# Create three columns of the top 5 selling videogames of all-time\n" +
+    "print(&quot;{:20}{:&gt;15}{:&gt;20}&quot;.format(&quot;Game&quot;, &quot;Sales (In Millions)&quot;, &quot;Platform&quot;))\n" +
+    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Minecraft&quot;,238,&quot;Multi-platform&quot;))\n" +
+    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Grand Theft Auto V&quot;,168,&quot;Multi-platform&quot;))\n" +
+    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Tetris (EA)&quot;,100,&quot;Mobile&quot;))\n" +
+    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;Wii Sports&quot;,82.9,&quot;Nintendo Wii&quot;))\n" +
+    "print(&quot;{:20}{:&gt;10}{:&gt;30}&quot;.format(&quot;PUBG&quot;,75,&quot;Multi-platform&quot;))";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
