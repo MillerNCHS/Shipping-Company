@@ -10,7 +10,7 @@
   var initial = "age = input(&quot;How old are you? &quot;)\n" +
     "print(&quot;Got it! You are&quot;,age,&quot;years old. Now I will ask how old your teacher is...&quot;)\n" +
     "teacher = input(&quot;How old is your teacher? &quot;)\n" +
-    "print(&quot;Got it! Your teacher is&quot;,age,&quot;years old. Let&#039;s find out how much older your teacher is...&quot;)\n" +
+    "print(&quot;Got it! Your teacher is&quot;,teacher,&quot;years old. Let&#039;s find out how much older your teacher is...&quot;)\n" +
     "difference = int(teacher) - int(age)\n" +
     "print(&quot;You are&quot;,str(difference),&quot;years older than your teacher.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
